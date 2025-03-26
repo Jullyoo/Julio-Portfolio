@@ -1,0 +1,55 @@
+@keyframes blinkMarker{
+    50% {
+        border-right-color: transparent;
+    }
+}
+@keyframes typing{
+    0%, 100%{
+        width: 0;
+    }
+    40%, 60% {
+        width: 17ch;
+    }
+}
+
+@keyframes scrollApper{
+    0%{
+        opacity: 0;
+        transform:scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes rotation_9018 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.circle, .resume_card, .text_card, .tech_card,.project_card {
+    animation: scrollApper auto linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0) rotate(0deg); 
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(15px) rotate(0deg); 
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0) rotate(0deg); 
+        opacity: 1;
+    }
+}

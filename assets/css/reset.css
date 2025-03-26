@@ -1,0 +1,96 @@
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(180deg, #151925, #3e0294);
+    color:#FFFFFF;
+    width:100%;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+   
+    .navegacao {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao a {
+        display: block;
+        padding: 10px;
+    }
+
+    
+    .main_section_center {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    
+    .container_content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .circle img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .resume_card {
+        width: 90%;
+    }
+
+    
+    .tech {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .tech_card {
+        width: 40%;
+    }
+
+    
+    .project_card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project_card img {
+        width: 90%;
+    }
+
+    
+    .contact_card2 {
+        width: 90%;
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}

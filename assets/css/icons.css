@@ -1,0 +1,37 @@
+.icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.icon-container img{
+    filter: invert(15%) sepia(100%) saturate(6700%) hue-rotate(272deg);
+}
+
+.icon-container a{
+    text-decoration: none;
+}
+
+.icon{
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+.arrow{
+    width: 50px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+    animation: moveDown 1.5s infinite ease-in-out;
+}
+.arrow img{
+    width: 50px;
+    filter: invert(15%) sepia(100%) saturate(6700%) hue-rotate(272deg);
+}
