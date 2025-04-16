@@ -23,6 +23,6 @@ Este portfólio foi construído com as seguintes tecnologias:
   
 ## 🎨 Demonstração
 
-  [Acesse meu portfólio](https://jullyoo.github.io/Julio-Portf-lio/)
+  [Acesse meu portfólio](https://jullyoo.github.io/Julio-Portfolio/)
 
   <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=1abc9c&height=120&section=footer"/>
