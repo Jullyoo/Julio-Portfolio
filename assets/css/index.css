@@ -1,9 +1,13 @@
 @import url('reset.css');
 @import url('header.css');
-@import url('sections.css');
 @import url('animations.css');
-@import url('cards.css');
 @import url('footer.css');
 @import url('icons.css');
 @import url('buttons.css');
 @import url('forms.css');
+@import url('inicio.css');
+@import url('sobre_mim.css');
+@import url('projetos.css');
+@import url('servicos.css');
+@import url('contato.css');
+@import url('tecnologias.css');

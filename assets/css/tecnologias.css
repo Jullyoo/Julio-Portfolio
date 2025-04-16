@@ -1,0 +1,55 @@
+/* Seção Tecnologia */
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.tech_card{
+    display: flex;
+    width: 190px;
+    height: 124px;
+    background-image: linear-gradient(163deg, #8800FF 0%, #3e0294 100%);
+    border-radius: 20px;
+    transition: all 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech_card2{
+    width: 100%;
+    height: 100%;
+    background-color: #1F2229;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.2s;
+    color:#8800FF;
+    padding: 20px;
+}
+
+.tech_card span{
+    margin-bottom: 10px;
+}
+.tech_card2 img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: none;
+    background-color: transparent;
+}
+
+.tech_card2:hover{
+    transform: scale(0.96);
+    border-radius: 20px;
+}
+.tech_card:hover{
+    box-shadow: 0px 0px 30px 1px rgba(111, 78, 255, 0.3);
+}

@@ -17,19 +17,19 @@ body {
 }
 
 @media (max-width: 768px) {
-   
     .navegacao {
         display: none;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
     .navegacao a {
         display: block;
         padding: 10px;
+        font-size: 16px;
     }
 
-    
     .main_section_center {
         text-align: center;
         padding: 20px;
@@ -38,26 +38,32 @@ body {
     .icon-container {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 15px;
+        margin-top: 10px;
     }
 
-    
     .container_content {
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px;
+        gap: 20px;
     }
 
     .circle img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
     }
 
     .resume_card {
         width: 90%;
+        margin-bottom: 20px;
     }
 
-    
     .tech {
         display: flex;
         flex-wrap: wrap;
@@ -66,31 +72,82 @@ body {
     }
 
     .tech_card {
-        width: 40%;
-    }
-
-    
-    .project_card {
-        flex-direction: column;
+        width: 45%;
+        min-width: 120px;
         text-align: center;
-    }
-
-    .project_card img {
-        width: 90%;
-    }
-
-    
-    .contact_card2 {
-        width: 90%;
         padding: 10px;
     }
 
-    input, textarea {
-        width: 100%;
+    .project_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
     }
-    
+
+    .project_card img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+
+    .contact_card2 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
     footer {
         text-align: center;
         padding: 20px;
+        font-size: 14px;
     }
+}
+
+/* Estilização geral das seções */
+section {
+    padding: 20px;
+}
+.section_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.main_section_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+}
+
+.section_title{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* Partículas */
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
 }
