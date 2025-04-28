@@ -33,7 +33,7 @@
     }
   }
 
-.photo, .resume_card, .text_card, .tech_card,.project_card, .services_card {
+.photo, .resume_card, .text_card, .tech_card,.services_card {
     animation: scrollApper auto linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;

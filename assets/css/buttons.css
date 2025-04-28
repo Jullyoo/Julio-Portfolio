@@ -53,3 +53,96 @@
 .button:active::before {
     scale: 0.7;
 }
+  
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+    gap:20px;
+}
+  
+.modal-content {
+    background-color: #1F2229;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #8800FF;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #8800FF;
+    text-align: center;
+}
+  
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.close:hover, .close:focus {
+    color: #ff0000;
+}
+
+.veja-mais-btn{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    background-color:#1F2229;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    gap:20px;
+}
+
+.veja-mais-btn::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 158px;
+    height: 58px;
+    border-radius: 10px;
+    background: linear-gradient(255deg, #8800FF, #3E0294);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.veja-mais-btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(255deg, #8800FF, #3E0294);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+.veja-mais-btn:hover::after {
+    filter: blur(30px);
+}
+  
+.veja-mais-btn:hover::before {
+    transform: scale(1.1);
+}
+  
+.veja-mais-btn:active::before {
+    scale: 0.7;
+}

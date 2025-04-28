@@ -1,4 +1,16 @@
 /* Seção Tecnologia */
+
+.tecno_section_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
 .tech{
     display: flex;
     flex-wrap: wrap;

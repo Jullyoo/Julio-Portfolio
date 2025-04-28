@@ -55,16 +55,25 @@
                         <div class="photo">
                             <img src="assets/images/png/foto-perfil.jpeg" alt="Foto de perfil">
                         </div>
+
                         <div class="info">
                             <h2 class="section_title">Quem sou <span>eu?</span></h2>
+
+                            <button id="openModalButton" class="veja-mais-btn">Veja Mais</button>
+
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close" id="closeModalButton">&times;</span>
                 
-                            <div class="resume_card">
-                                <p class="resume_card__title">Breve Resumo</p>
-                                <ul class="resume_card__description" id="lista"></ul>
-                            </div>
+                                    <div class="resume_card">
+                                        <p class="resume_card__title">Breve Resumo</p>
+                                        <ul class="resume_card__description" id="lista"></ul>
+                                    </div>
                 
-                            <div class="text_card">
-                                <p class="apresentacao" id="text"></p>
+                                    <div class="text_card">
+                                        <p class="apresentacao" id="text"></p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -155,6 +164,7 @@
 
             <section id="projetos" class="section_center">
                 <h2 class="section_title">Projetos</h2>
+
                     <div class="project_card">
                     <img src="assets/images/png/Projeto_Portifolio.PNG" alt="Portfólio">
                         <div class="project_card__content">
@@ -168,6 +178,42 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project_card">
+                        <img src="assets/images/png/Dashboard-rh.PNG" alt="Dashboard-rh">
+                            <div class="project_card__content">
+                                <p class="project_card__title">Dashboard Recursos Humanos</p>
+                                <p class="Project_card__description">Um Dashboard em Power BI demonstrando informações sobre o RH de uma empresa.</p>
+                                <div class="project_card__images">
+                                    <img src="assets/images/png/Power_BI.png" alt="Power-BI">
+                                    <img src="assets/images/png/python.svg" alt="Python">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project_card">
+                            <img src="assets/images/png/Dashboard-vendas.PNG" alt="Dashboard-vendas">
+                                <div class="project_card__content">
+                                    <p class="project_card__title">Dashboard Vendas</p>
+                                    <p class="Project_card__description">Dashboard em Power BI apresentando dados e insights sobre as vendas de uma empresa.</p>
+                                    <div class="project_card__images">
+                                        <img src="assets/images/png/Power_BI.png" alt="Power-BI">
+                                        <img src="assets/images/png/python.svg" alt="Python">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project_card">
+                                <img src="assets/images/png/Dashboard-brasileirão.PNG" alt="Dashboard-brasileirão">
+                                    <div class="project_card__content">
+                                        <p class="project_card__title">Dashboard Futebol</p>
+                                        <p class="Project_card__description">Dashboard em Power BI apresentando dados sobre o campeonato brasileiro de 2024, Projeto realizado com base em uma proposta de faculdade.</p>
+                                        <div class="project_card__images">
+                                            <img src="assets/images/png/Power_BI.png" alt="Power-BI">
+                                        </div>
+                                    </div>
+                                </div>
+
             </section>
 
             <section id="contato" class="section_center">
@@ -207,6 +253,7 @@
             <script src="assets/js/lista.js"></script>
             <script src="assets/js/mensagem.js"></script>
             <script src="assets/js/height.js"></script>
+            <script src="assets/js/modal.js"></script>
     </body>
 </html>
 

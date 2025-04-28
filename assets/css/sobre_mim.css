@@ -61,10 +61,12 @@
 .resume_card,
 .text_card {
     position: relative;
+    z-index: 1;
     background: linear-gradient(163deg, #8800FF 0%, #3e0294 100%);
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 0 20px #3e0294;
+    overflow: visible;
 }
 
 .resume_card::after,
@@ -72,7 +74,7 @@
     content: '';
     background-color: #1F2229;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     height: 96%;
     width: 96%;
     top: 2%;
@@ -120,15 +122,3 @@
     z-index: 1;
 }
 
-/* Seção Tecnologias */
-.tecno_section_center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
